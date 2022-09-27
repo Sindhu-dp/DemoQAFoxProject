@@ -9,10 +9,12 @@ import cucumber.api.junit.Cucumber;
 
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features={"classpath:FeatureFiles/Register.feature" },
+@CucumberOptions(features={"classpath:FeatureFiles/LoginTest.feature","classpath:FeatureFiles/Register.feature" },
 glue={"classpath:com.tutorialsninja.automation.stepdef"},
-plugin={"html:target/cucumber_html_report"},
-tags={"@Register", "@Four"})
+plugin={"html:target/cucumber_html_report"}
+//tags={"@Login", "@Four"}
+)
+
 public class Runner {
 	
 

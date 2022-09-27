@@ -1,7 +1,4 @@
 package com.tutorialsninja.automation.runner;
-
-
-
 import org.junit.runner.RunWith;
 
 import cucumber.api.CucumberOptions;
@@ -9,10 +6,10 @@ import cucumber.api.junit.Cucumber;
 
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features={"classpath:FeatureFiles/LoginTest.feature","classpath:FeatureFiles/Register.feature" },
+@CucumberOptions(features={"classpath:FeatureFiles/Register.feature" ,"classpath:FeatureFiles/LoginTest.feature","classpath:FeatureFiles/search.feature"},
 glue={"classpath:com.tutorialsninja.automation.stepdef"},
-plugin={"html:target/cucumber_html_report"}
-//tags={"@Login", "@Four"}
+plugin={"html:target/cucumber_html_report"},
+//tags={"@Search", "@Two"}
 )
 
 public class Runner {

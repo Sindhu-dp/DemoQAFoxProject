@@ -26,8 +26,11 @@ public void i_should_see_the_product_in_the_search_resultsil_address() {
 }
 	
 @Then("^I should see the page displaying the message \"([^\"]*)\"$")
-public void i_should_see_the_page_displaying_the_message(String arg1) {
+public void i_should_see_the_page_displaying_the_message(String message) {
     
+	Assert.assertTrue(Elements.VerifyTextEquals(SearchResultsPage.noResultsMessage, message));
+	
+	
 }
 
 

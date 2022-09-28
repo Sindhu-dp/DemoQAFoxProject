@@ -57,6 +57,10 @@ public class Browser {
 	public static void maximize() {
 		Base.driver.manage().window().maximize();
 	}
+	public static void openApplicationUrl() {
+		Base.driver.get(Base.reader.getUrl());
+	}
+
 
 	public static byte[] takeScreenshot() {
 		try {
@@ -67,7 +71,9 @@ public class Browser {
 			return null;
 		}
 
-		
+
 
 	}
+
+
 }
